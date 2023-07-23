@@ -1,0 +1,233 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #c3ddf1;
+}
+.header-in {
+  padding: 28px 114px 28px 114px;
+  display: flex;
+  justify-content: space-between;
+}
+.flex-box {
+  display: flex;
+  gap: 3px;
+  z-index: 7;
+}
+.logo-font {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Spoqa Han Sans Neo;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.logo-font-small {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.14px;
+}
+.ai-body {
+  width: 100%;
+  height: calc(100vh - 200px);
+  background-color: #c3ddf1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ai-footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #ffffff;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.ai-footer {
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.language {
+  background-color: transparent;
+  position: fixed;
+  right: 141px;
+  top: 40px;
+  color: #ffffff;
+  font-family: "Spoqa Han Sans Neo-Bold", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  height: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+  z-index: 7;
+}
+.language-circle {
+  background-color: transparent;
+  position: fixed;
+  right: 114px;
+  z-index: 7;
+}
+.label {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.content {
+  margin-top: -13vh;
+}
+.label .text-wrapper {
+  color: #b3cfe4;
+  font-family: "Playfair Display-SemiBold", Helvetica;
+  font-size: 10vw;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.flex-box-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.background {
+  position: relative;
+  width: 40vh;
+  height: 39vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image {
+  background-image: url("/src/images/crystal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: difference;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+.crys-text-wrapper {
+  mix-blend-mode: normal;
+  color: #100a22;
+  font-family: "Spoqa Han Sans Neo-Medium", Helvetica;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-align: center;
+  padding-top: 102px;
+}
+.crys-text-wrapper-bottom {
+  color: #404040;
+  font-family: "Spoqa Han Sans Neo-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+}
+.button {
+  align-items: center;
+  border-radius: 50px;
+  display: inline-flex;
+  gap: 10px;
+  height: 6vh;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px 63px;
+  position: relative;
+  z-index: 999;
+}
+.button .START {
+  color: #404040;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+.button.hover {
+  background-color: #ffffff66;
+  border-color: #404040;
+}
+.button.default {
+  background-color: #ffffff;
+}
+.logo-font {
+  color: #000000;
+  text-align: center;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Spoqa Han Sans Neo;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.logo-font-small {
+  color: #000000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.14px;
+}
+.text-wrapper-1 {
+  color: #a1b9cc;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+}
+.text-wrapper-2 {
+  color: #abc7dc;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+}
+.text-wrapper-3 {
+  color: #9f9f9f;
+  font-family: "Spoqa Han Sans Neo-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+}
