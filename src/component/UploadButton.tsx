@@ -28,7 +28,7 @@ export default function UploadButton({ setUploadedImage }: any) {
       formData.append("file", file);
 
       axios
-        .post("http://127.0.0.1:8000/api/face", formData, {
+        .post(process.env.REACT_APP_FACE_API_URL+"/api/face", formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
