@@ -1,7 +1,14 @@
 import axios from "axios";
 import React from "react";
 
-export default function UploadButton({ setUploadedImage }: any) {
+export default function UploadButton({
+  setUploadedImage,
+  handleClickOpen,
+  handleClose,
+  setPercent,
+  setAgency,
+  setIsResultPage,
+}: any) {
   const [btnClass, setBtnClass] = React.useState("default");
   const inputRef = React.useRef<HTMLInputElement>(null);
   const handleButtonClick = () => {
@@ -26,18 +33,23 @@ export default function UploadButton({ setUploadedImage }: any) {
       const formData = new FormData();
 
       formData.append("file", file);
-
+      handleClickOpen();
       axios
-        .post(process.env.REACT_APP_FACE_API_URL+"/api/face", formData, {
+        .post("http://127.0.0.1:8000/api/face", formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
         })
         .then((response) => {
           console.log(response.data);
+          setPercent(response.data.percentage);
+          setAgency(response.data.company);
+          handleClose();
+          setIsResultPage(true);
         })
         .catch((error) => {
           console.error("There was an error!", error);
+          handleClose();
         });
     }
   };
