@@ -39,7 +39,7 @@ export default function UploadButton({
           headers: {
             "Content-Type" : "multipart/form-data",
             "ngrok-skip-browser-warning" : "69420",
-            "Access-Control-Allow-Origin" : "*",
+            "Access-Control-Allow-Origin" : "https://2980-1-241-85-168.ngrok-free.app",
             "Access-Control-Allow-Headers" : "*",
           },
         })
