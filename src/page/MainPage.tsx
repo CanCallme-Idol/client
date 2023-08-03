@@ -36,7 +36,7 @@ export default function MainPage() {
   };
   React.useEffect(() => {
     axios
-      .get(process.env.REACT_APP_FACE_API_URL + "/api/test")
+      .post(process.env.REACT_APP_FACE_API_URL + "/api/test")
       .then((response) => {
         console.log("연결되나??", response.data);
       })
