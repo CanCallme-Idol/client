@@ -17,6 +17,7 @@ import MoveAnimation from "../component/MoveAnimation";
 import UploadButton from "../component/UploadButton";
 import { Button } from "@mui/material";
 import Dialog from "@mui/material/Dialog";
+import axios from "axios";
 
 export default function MainPage() {
   const images = [image1, image2, image3, image4];
@@ -33,7 +34,16 @@ export default function MainPage() {
     visible: { y: "0%" },
     exit: { y: "-100%" },
   };
-
+  React.useEffect(() => {
+    axios
+      .post(process.env.REACT_APP_FACE_API_URL + "/api/test")
+      .then((response) => {
+        console.log("연결되나??", response.data);
+      })
+      .catch((error) => {
+        console.error("실패!! There was an error!", error);
+      });
+  }, []);
   React.useEffect(() => {
     if (agency === "hybe") {
       setCurrentIndex(0);
