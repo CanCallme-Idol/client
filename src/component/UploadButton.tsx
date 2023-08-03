@@ -37,7 +37,10 @@ export default function UploadButton({
       axios
         .post(process.env.REACT_APP_FACE_API_URL+"/api/face", formData, {
           headers: {
-            "Content-Type": "multipart/form-data",
+            "Content-Type" : "multipart/form-data",
+            "ngrok-skip-browser-warning" : "69420",
+            "Access-Control-Allow-Origin" : "https://2980-1-241-85-168.ngrok-free.app",
+            "Access-Control-Allow-Headers" : "*",
           },
         })
         .then((response) => {
