@@ -36,7 +36,13 @@ export default function MainPage() {
   };
   React.useEffect(() => {
     axios
-      .post(process.env.REACT_APP_FACE_API_URL + "/api/test")
+      .post(process.env.REACT_APP_FACE_API_URL + "/api/test",{
+        headers: {
+          "ngrok-skip-browser-warning" : "69420",
+          "Access-Control-Allow-Origin" : "https://2980-1-241-85-168.ngrok-free.app",
+          "Access-Control-Allow-Headers" : "*",
+        },
+      })
       .then((response) => {
         console.log("연결되나??", response.data);
       })
