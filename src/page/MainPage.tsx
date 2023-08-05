@@ -9,8 +9,6 @@ import bgimage3 from "../images/bg+title (2).png";
 import bgimage4 from "../images/bg+title (3).png";
 import { ReactComponent as BtnIcon } from "../images/button.svg";
 import crystalImage from "../images/crystal.png";
-import waitingModal from "../images/Popup_check_preference.png";
-
 import Header from "../component/Header";
 import Footer from "../component/Footer";
 import MoveAnimation from "../component/MoveAnimation";
@@ -111,7 +109,7 @@ export default function MainPage() {
   };
   return (
     <div className="main">
-      <Header />
+      <Header isMobile={isMobile} />
       <Dialog open={open} onClose={handleClose}>
         <div className="box">
           <div className="popup-check">
