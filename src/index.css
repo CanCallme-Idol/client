@@ -195,6 +195,8 @@ body {
   padding: 0px 63px;
   position: relative;
   z-index: 999;
+  margin-top: 20px;
+  cursor: pointer;
 }
 .button .START {
   color: #404040;
@@ -265,6 +267,18 @@ body {
   top: 0;
   white-space: nowrap;
 }
+.result-wrapper-end {
+  color: #100922;
+  font-family: "Spoqa Han Sans Neo-Medium", Helvetica;
+  font-size: 26px;
+  font-weight: 500;
+  left: 20;
+  letter-spacing: 0;
+  line-height: 36px;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+}
 .result-num {
   color: #0c4c7b;
   font-family: Playfair Display-Medium, Helvetica;
@@ -277,4 +291,63 @@ body {
 }
 .result-content {
   z-index: 17;
+}
+.box {
+  border: 0px none;
+  height: 264px;
+  width: 240px;
+  display: relative;
+}
+
+.box .popup-check {
+  height: 264px;
+  position: relative;
+  top: 0;
+  width: 240px;
+}
+
+.box .overlap-group {
+  height: 264px;
+  position: relative;
+}
+
+.box .rectangle {
+  height: 263px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 240px;
+}
+
+.box .element {
+  height: 74px;
+  left: 23px;
+  position: absolute;
+  top: 162px;
+  width: 194px;
+}
+
+.box .img {
+  height: 132px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 240px;
+}
+
+.box .img-googleaccount {
+  height: 84px;
+  left: 64px;
+  position: absolute;
+  top: 23px;
+  width: 98px;
+}
+
+.box .https-app {
+  height: 100px;
+  left: 71px;
+  object-fit: cover;
+  position: absolute;
+  top: 109px;
+  width: 100px;
 }

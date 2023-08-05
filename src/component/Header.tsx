@@ -9,8 +9,8 @@ export default function Header() {
         <div className="flex-box">
           <Logo />
           <div>
-            <div className="logo-font">INEX</div>
-            <div className="logo-font-small">IDOL</div>
+            <div className="logo-font">StarOasis</div>
+            <div className="logo-font-small">Korea</div>
           </div>
         </div>
         <div className="language">

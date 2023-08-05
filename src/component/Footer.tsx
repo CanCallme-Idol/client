@@ -7,8 +7,8 @@ export default function Footer() {
       <div className="flex-box">
         <Logo />
         <div>
-          <div className="logo-font-botom">INEX</div>
-          <div className="logo-font-small-botom">IDOL</div>
+          <div className="logo-font-botom">StarOasis</div>
+          <div className="logo-font-small-botom">Korea</div>
         </div>
       </div>
       <div>

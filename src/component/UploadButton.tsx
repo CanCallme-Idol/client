@@ -7,6 +7,7 @@ export default function UploadButton({
   handleClose,
   setPercent,
   setAgency,
+  setErrorMessage,
   setIsResultPage,
 }: any) {
   const [btnClass, setBtnClass] = React.useState("default");
@@ -18,7 +19,7 @@ export default function UploadButton({
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files) {
       const file = event.target.files[0];
-      console.log(file);
+      // console.log(file);
       var reader = new FileReader();
 
       reader.onloadend = function () {
@@ -35,7 +36,7 @@ export default function UploadButton({
       formData.append("file", file);
       handleClickOpen();
       axios
-        .post(process.env.REACT_APP_FACE_API_URL+"/api/face", formData, {
+        .post(process.env.REACT_APP_FACE_API_URL + "/api/face", formData, {
           // headers: {
           //   "Content-Type" : "multipart/form-data",
           //   "ngrok-skip-browser-warning" : "69420",
@@ -44,9 +45,10 @@ export default function UploadButton({
           // },
         })
         .then((response) => {
-          console.log(response.data);
+          // console.log(response.data);
           setPercent(response.data.percentage);
           setAgency(response.data.company);
+          setErrorMessage(response.data?.errorMessage[0]);
           handleClose();
           setIsResultPage(true);
         })
