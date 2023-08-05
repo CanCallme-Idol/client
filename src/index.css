@@ -263,7 +263,7 @@ body {
   font-weight: 500;
   left: 0;
   letter-spacing: 0;
-  line-height: 36px;
+  margin-bottom: -10px;
   text-align: center;
   top: 0;
   white-space: nowrap;
@@ -351,4 +351,8 @@ body {
   position: absolute;
   top: 109px;
   width: 100px;
+}
+.HYBE {
+  padding: 0px;
+  margin: 0px;
 }
