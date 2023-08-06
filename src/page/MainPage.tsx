@@ -68,7 +68,7 @@ export default function MainPage() {
           <div className="result-content">
             <h1 className="result-wrapper">
               {errorMessage === "01"
-                ? "얼굴이 여러개가 보여요"
+                ? "얼굴이 여러개가 보여요."
                 : "얼굴이 보이지 않아요"}
             </h1>
             <h1 className="HYBE">
